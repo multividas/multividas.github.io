@@ -1,0 +1,138 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.app-header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1020;
+}
+
+.bg-light-darken {
+    background-color: rgba(0, 0, 0, 0.483) !important;
+}
+
+/* header */
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 400px;
+    max-height: 400px;
+    text-align: center;
+    background: linear-gradient(135deg, #000000, #0f4c81);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.header > h1 {
+    font-size: 50px !important;
+}
+
+/* stars */
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.stars .animation.stars-small {
+    animation: animStar 60s linear infinite;
+    z-index: 0;
+    opacity: .05;
+    background: url(~@/assets/images/stars/stars_small.webp);
+}
+
+.stars .animation.stars-large {
+    animation: animStar 30s linear infinite;
+    z-index: 1;
+    opacity: .2;
+    background: url(~@/assets/images/stars/stars_large.webp);
+}
+
+.stars .animation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: calc(100vh + 400px);
+    background-size: cover;
+    color: transparent;
+    z-index: 1;
+}
+
+@keyframes animStar {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
+/* stars */
+
+.announcement {
+    text-align: start;
+    padding: 15px;
+}
+
+.announcement .announcement-date {
+    color: #626d78;
+    font-size: .875rem;
+}
+
+.announcement h3 {
+    font-size: 24px;
+    line-height: 1.5;
+    color: #212529;
+}
+
+.announcement p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.announcement .content > p {
+    line-height: 2.5;
+}
+
+@media only screen and (max-width: 576px) {
+    .header > h1 {
+        font-size: 40px !important;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+    .header > h1 {
+        font-size: 45px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .header > h1 {
+        font-size: 50px !important;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    /*  */
+}
+
+@media only screen and (min-width: 1201px) {
+    /*  */
+}
