@@ -25,7 +25,7 @@ body {
     height: 400px;
     max-height: 400px;
     text-align: center;
-    background: linear-gradient(135deg, #000000, #0f4c81);
+    background: linear-gradient(135deg, #021b31, #0f4c81);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,14 +51,14 @@ body {
 }
 
 .stars .animation.stars-small {
-    animation: animStar 60s linear infinite;
+    animation: animStar 30s linear infinite;
     z-index: 0;
     opacity: .05;
     background: url(~@/assets/images/stars/stars_small.webp);
 }
 
 .stars .animation.stars-large {
-    animation: animStar 30s linear infinite;
+    animation: animStar 15s linear infinite;
     z-index: 1;
     opacity: .2;
     background: url(~@/assets/images/stars/stars_large.webp);
@@ -127,12 +127,4 @@ body {
     .header > h1 {
         font-size: 50px !important;
     }
-}
-
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
-    /*  */
-}
-
-@media only screen and (min-width: 1201px) {
-    /*  */
 }
