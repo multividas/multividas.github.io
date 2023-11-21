@@ -32,9 +32,7 @@ export default {
   methods: {
     handleScroll() {
       const currentScrollPos = window.scrollY;
-      const scrollThreshold = 0.4 * window.innerHeight;
-
-      console.log(currentScrollPos, scrollThreshold);
+      const scrollThreshold = 0.15 * window.innerHeight;
 
       this.isHidden = currentScrollPos > scrollThreshold;
     },

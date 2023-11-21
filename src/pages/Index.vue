@@ -7,43 +7,46 @@
       </div>
       <h1 class="fw-bold text-white">Multividas.com</h1>
     </header>
-    <main class="container py-5 my-2">
+    <main class="container py-5 my-5">
       <div class="card">
         <div class="card-body">
           <section class="announcement">
-            <p class="announcement-date">Announced on July 7th, 2024.</p>
-            <h3>Explore the diverse world of Multividas</h3>
-            <div class="content my-3">
-              <p class="lh-lg">
+            <div class="announcement-header mb-3">
+              <p class="announcement-date mb-2">Announced on July 7th, 2024.</p>
+              <h3>Explore the diverse world of Multividas</h3>
+            </div>
+            <ul class="announcement-content mb-3">
+              <li>
                 <span>Multividas.com began in ceo-founder</span>
-                <a
-                  href="https://soulaimaneyahya.com/"
-                  target="_blank"
+                <span
+                  role="button"
                   class="fw-bold text-primary text-decoration-underline mx-2"
+                  @click="handleRedirect()"
                 >
                   <span>@soulaimaneyahya</span>
-                </a>
+                </span>
                 <span
                   >living room and neighborhood library in 2023 and will
                   officially released on July, 2024.</span
                 >
-              </p>
-              <p class="lh-lg">
+              </li>
+              <li>
                 Our mission is to build the app of everything, creating a
                 diverse and inclusive world for everyone to share threads posts.
-              </p>
-              <p class="lh-lg">
+              </li>
+              <li>
                 Multividas.com is a social media and blogging platform where
                 people can share their short texts and posts, leaving comments
                 and have discussions on threads.
-              </p>
-              <p class="lh-lg">
+              </li>
+              <li>
                 We'll provide more information and details over the upcoming
                 weeks and months.
-              </p>
+              </li>
+            </ul>
+            <div class="announcement-footer">
+              <p class="appreciation-text">Thank you,<br> the Multividas Team</p>
             </div>
-            <p class="text-muted"><i>Thank you,</i></p>
-            <p class="text-muted"><i>the Multividas Team</i></p>
           </section>
         </div>
       </div>
@@ -56,6 +59,11 @@ export default {
   metaInfo: {
     title: "Home Page",
   },
+  methods: {
+    handleRedirect() {
+      return window.location.open('https://soulaimaneyahya.com/', '_blank')
+    }
+  }
 };
 </script>
 

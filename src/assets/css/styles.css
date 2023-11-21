@@ -12,7 +12,7 @@ body {
 }
 
 .bg-light-darken {
-    background-color: rgba(0, 0, 0, 0.483) !important;
+    background-color: #021b3153 !important;
 }
 
 /* header */
@@ -25,7 +25,7 @@ body {
     height: 400px;
     max-height: 400px;
     text-align: center;
-    background: linear-gradient(135deg, #021b31, #0f4c81);
+    background: linear-gradient(135deg, #021b31, #105c9f);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,6 +85,7 @@ body {
 }
 /* stars */
 
+/* announcement */
 .announcement {
     text-align: start;
     padding: 15px;
@@ -92,24 +93,35 @@ body {
 
 .announcement .announcement-date {
     color: #626d78;
-    font-size: .875rem;
+    font-size: 1rem;
 }
 
 .announcement h3 {
-    font-size: 24px;
-    line-height: 1.5;
+    font-size: 26px;
+    line-height: 1.5rem;
     color: #212529;
 }
 
 .announcement p {
-    font-size: 18px;
-    line-height: 1.5;
+    font-size: 22px;
+    line-height: 1.5rem;
     color: #333;
 }
 
-.announcement .content > p {
-    line-height: 2.5;
+.announcement ul.announcement-content li {
+    font-size: 18px;
+    line-height: 2.5rem;
+    list-style-type: disc;
+    padding-left: 5px;
+    margin-left: 25px;
 }
+
+.announcement .appreciation-text {
+    color: #626d78;
+    font-size: 1rem;
+    font-style: italic;
+}
+/* end announcement */
 
 @media only screen and (max-width: 576px) {
     .header > h1 {
