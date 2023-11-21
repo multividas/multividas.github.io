@@ -18,6 +18,12 @@ export default function (Vue, { router, head, isClient }) {
 
   // head links
   head.link.push({
+    rel: 'canonical',
+    href: 'https://multividas.com'
+  }, {
+    rel: 'icon',
+    href: 'https://developers.multividas.com/images/logo.svg'
+  }, {
     rel: 'shortcut icon',
     href: 'https://developers.multividas.com/images/logo.svg'
   }, {
@@ -28,20 +34,35 @@ export default function (Vue, { router, head, isClient }) {
     href: 'https://res.cloudinary.com/db1e0b4ka/raw/upload/v1700411908/mv-scss/footer.css'
   });
 
-  // seop friendly
+  // meta headers
   head.meta.push({
     name: 'theme-color',
     content: '#0f4c81'
   }, {
-    property: 'locale',
+    name: 'locale',
     content: 'en_US'
   }, {
-    property: 'type',
+    name: 'type',
     content: 'social media and blogging platform'
   }, {
-    property: 'title',
+    name: 'title',
     content: 'Explore the diverse world of Multividas.'
   }, {
+    name: 'description',
+    content: 'Multividas.com is a social media and blogging platform where people can share their short texts and posts, leaving comments and have discussions on threads.'
+  }, {
+    name: 'keywords',
+    content: 'multividas, multividas api documentation, multividas threads, multividas status, multividas help center, multividas developer, multvidas about us, multividas ads, multividas engineering blog, multividas developers documentation, multividas embed threads'
+  }, {
+    name: 'author',
+    content: 'Soulaimane Yahya'
+  }, {
+    name: 'robots',
+    content: 'index, follow'
+  });
+
+  // opengraph meta tags
+  head.meta.push({
     property: 'og:description',
     content: 'Multividas.com is a social media and blogging platform where people can share their short texts and posts, leaving comments and have discussions on threads.'
   }, {
@@ -53,5 +74,23 @@ export default function (Vue, { router, head, isClient }) {
   }, {
     property: 'og:site_name',
     content: 'Multividas'
+  });
+
+  // Twitter Card
+  head.meta.push({
+    name: 'twitter:card',
+    content: 'summary'
+  }, {
+    name: 'twitter:site',
+    content: '@multividaseng'
+  }, {
+    name: 'twitter:title',
+    content: 'Multividas - Social Media and Blogging Platform'
+  }, {
+    name: 'twitter:description',
+    content: 'Multividas.com is a social media and blogging platform where people can share their short texts and posts, leaving comments and have discussions on threads.'
+  }, {
+    name: 'twitter:image',
+    content: 'https://developers.multividas.com/images/logo.svg'
   });
 }

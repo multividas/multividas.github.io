@@ -33,9 +33,7 @@ jobs:
       - name: Install gridsome globally
         run: npm install --global @gridsome/cli
       - name: Build portal web page
-        run: |
-          gridsome build
-          touch dist/.nojekyll
+        run : gridsome build && touch dist/.nojekyll && touch dist/favicon.ico
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
