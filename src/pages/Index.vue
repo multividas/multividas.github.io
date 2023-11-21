@@ -61,7 +61,7 @@ export default {
   },
   methods: {
     handleRedirect() {
-      return window.location.open('https://soulaimaneyahya.com/', '_blank')
+      return window.open('https://soulaimaneyahya.com/', '_blank')
     }
   }
 };
