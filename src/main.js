@@ -30,6 +30,9 @@ export default function (Vue, { router, head, isClient }) {
 
   // seop friendly
   head.meta.push({
+    name: 'theme-color',
+    content: '#0f4c81'
+  }, {
     property: 'locale',
     content: 'en_US'
   }, {
