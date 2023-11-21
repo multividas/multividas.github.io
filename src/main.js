@@ -16,6 +16,7 @@ export default function (Vue, { router, head, isClient }) {
   // Set Main Main as a global component
   Vue.component('Main', MainLayout)
 
+  // head links
   head.link.push({
     rel: 'shortcut icon',
     href: 'https://developers.multividas.com/images/logo.svg'
@@ -25,5 +26,29 @@ export default function (Vue, { router, head, isClient }) {
   }, {
     rel: 'stylesheet',
     href: 'https://res.cloudinary.com/db1e0b4ka/raw/upload/v1700411908/mv-scss/footer.css'
-  })
+  });
+
+  // seop friendly
+  head.meta.push({
+    property: 'locale',
+    content: 'en_US'
+  }, {
+    property: 'type',
+    content: 'social media and blogging platform'
+  }, {
+    property: 'title',
+    content: 'Explore the diverse world of Multividas.'
+  }, {
+    property: 'og:description',
+    content: 'Multividas.com is a social media and blogging platform where people can share their short texts and posts, leaving comments and have discussions on threads.'
+  }, {
+    property: 'og:image',
+    content: 'https://developers.multividas.com/images/logo.svg'
+  }, {
+    property: 'og:url',
+    content: 'https://multividas.com'
+  }, {
+    property: 'og:site_name',
+    content: 'Multividas'
+  });
 }
