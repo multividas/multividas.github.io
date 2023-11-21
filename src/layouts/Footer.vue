@@ -131,7 +131,7 @@
               </li>
               <li class="list-inline-item cp">
                 <a
-                  href="https://www.threads.com/@multividasdotcom/"
+                  href="https://www.threads.net/@multividasdotcom/"
                   target="_blank"
                 >
                   <svg

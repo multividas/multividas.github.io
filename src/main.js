@@ -52,7 +52,7 @@ export default function (Vue, { router, head, isClient }) {
     content: 'Multividas.com is a social media and blogging platform where people can share their short texts and posts, leaving comments and have discussions on threads.'
   }, {
     name: 'keywords',
-    content: 'multividas, multividas api documentation, multividas threads, multividas status, multividas help center, multividas developer, multvidas about us, multividas ads, multividas engineering blog, multividas developers documentation, multividas embed threads'
+    content: 'multividas, multividas api documentation, multividas threads, multividas status, multividas help center, multividas developer, multividas about us, multividas ads, multividas engineering blog, multividas developers documentation, multividas embed threads'
   }, {
     name: 'author',
     content: 'Soulaimane Yahya'
