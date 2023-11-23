@@ -13,16 +13,17 @@
   "license": "MIT",
   "scripts": {
     "develop": "gridsome develop",
-    "build": "npm-run-all format lint gridsome-build",
+    "build": "npm-run-all format lint build-only",
     "build-only": "gridsome build",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "format": "prettier --write src/"
-  },
-  "engines": {
-    "node": "^18"
+    "format": "prettier --write src/",
+    "explore": "gridsome explore"
   },
   "dependencies": {
     "gridsome": "^0.7.0"
+  },
+  "engines": {
+    "node": "^18"
   },
   "devDependencies": {
     "eslint": "^8.54.0",
