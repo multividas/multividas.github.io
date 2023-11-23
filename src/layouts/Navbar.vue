@@ -8,9 +8,11 @@
         </strong>
       </div>
       <ul class="d-flex justify-content-end align-items-start gap-4">
-          <li class="nav-item">
-            <a class="nav-link text-white" href="https://about.multividas.com" target="_blank">About us</a>
-          </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="https://about.multividas.com" target="_blank"
+            >About us</a
+          >
+        </li>
       </ul>
     </div>
   </nav>

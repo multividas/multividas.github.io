@@ -1,16 +1,34 @@
 {
   "name": "multividas.github.io",
   "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "multividas",
+    "multividas api documentation",
+    "multividas threads",
+    "multividas blogs"
+  ],
+  "author": "soulaimane yahya <contact@soulaimaneyahya.com> (https://soulaimaneyahya.com/)",
+  "license": "MIT",
   "scripts": {
-    "build": "gridsome build",
     "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "build": "npm-run-all format lint gridsome-build",
+    "build-only": "gridsome build",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "format": "prettier --write src/"
+  },
+  "engines": {
+    "node": "^16"
   },
   "dependencies": {
     "gridsome": "^0.7.0"
   },
-  "engines": {
-    "node": ">=16"
-  },
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "^8.54.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-vue": "^9.18.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.1.0"
+  }
 }

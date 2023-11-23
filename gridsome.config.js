@@ -3,4 +3,4 @@ module.exports = {
   siteUrl: 'https://multividas.com',
   siteDescription: 'Explore the diverse world of Multividas.',
   plugins: [],
-};
+}
