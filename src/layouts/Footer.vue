@@ -34,9 +34,7 @@
           <h5 class="footer-section-title fw-bold mb-3 cp">Resources</h5>
           <ul class="footer-links">
             <li>
-              <a href="https://multividas.com/investor-relations" target="_blank"
-                >Investor Relations</a
-              >
+              <a href="https://multividas.com/investor-relations" target="_blank">Investor Relations</a>
             </li>
             <li>
               <a href="https://ads.multividas.com" target="_blank">Advertising</a>
@@ -45,8 +43,7 @@
               <a href="https://engineering.multividas.com" target="_blank">Engineering blog</a>
             </li>
             <li>
-              <a href="https://developers.multividas.com" target="_blank"
-                >Developers documentation
+              <a href="https://developers.multividas.com" target="_blank">Developers documentation
               </a>
             </li>
           </ul>
@@ -61,9 +58,7 @@
               <a href="https://multividas.com/privacy-policy">Privacy Policy</a>
             </li>
             <li>
-              <a href="https://multividas.com/data-privacy-compliance"
-                >Data Privacy and Compliance</a
-              >
+              <a href="https://multividas.com/data-privacy-compliance">Data Privacy and Compliance</a>
             </li>
             <li>
               <a href="https://multividas.com/cookies">Cookies</a>

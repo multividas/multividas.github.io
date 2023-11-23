@@ -25,7 +25,8 @@
                 >
                   @soulaimaneyahya
                 </span>
-                <span>living room and neighborhood library in 2023 and will officially released onJuly, 2024.</span>
+                <span>living room and neighborhood library in 2023 and will officially released onJuly,
+                  2024.</span>
               </li>
               <li>
                 Our mission is to build the app of everything, creating a diverse and inclusive

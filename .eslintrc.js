@@ -2,20 +2,20 @@
 module.exports = {
   extends: [
     'eslint:recommended',
-    'plugin:vue/vue3-recommended',
+    'plugin:vue/vue3-recommended'
   ],
   parserOptions: {
     ecmaVersion: 2020,
-    sourceType: 'module',
+    sourceType: 'module'
   },
   plugins: [
-    'node',
+    'node'
   ],
   env: {
     amd: true,
     es6: true,
     node: true,
-    browser: true,
+    browser: true
   },
   rules: {
     indent: ['error', 2],
@@ -35,10 +35,10 @@ module.exports = {
         html: {
           void: 'always',
           normal: 'always',
-          component: 'always',
-        },
-      },
+          component: 'always'
+        }
+      }
     ],
-    'vue/no-v-text-v-html-on-component': 'off',
-  },
+    'vue/no-v-text-v-html-on-component': 'off'
+  }
 }
