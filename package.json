@@ -2,7 +2,7 @@
   "name": "multividas.github.io",
   "private": true,
   "version": "1.0.0",
-  "description": "",
+  "description": "Multividas.com is a social media and blogging platform where people can share their short texts and posts, leaving comments and have discussions on threads.",
   "keywords": [
     "multividas",
     "multividas api documentation",
@@ -19,7 +19,7 @@
     "format": "prettier --write src/"
   },
   "engines": {
-    "node": "^16"
+    "node": "^18"
   },
   "dependencies": {
     "gridsome": "^0.7.0"
