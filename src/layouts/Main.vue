@@ -1,7 +1,7 @@
 <template>
   <div class="d-flex flex-column min-vh-100">
     <header class="app-header" :class="{ 'd-none': isHidden }">
-      <Navbar></Navbar>
+      <NavbarLayout />
     </header>
     <div class="app-container">
       <div class="col-md-12">
@@ -9,7 +9,7 @@
       </div>
     </div>
     <footer class="app-footer">
-      <Footer></Footer>
+      <FooterLayout />
     </footer>
   </div>
 </template>
@@ -26,24 +26,24 @@ query {
 export default {
   data() {
     return {
-      isHidden: false,
-    };
+      isHidden: false
+    }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.handleScroll)
   },
   methods: {
     handleScroll() {
-      const currentScrollPos = window.scrollY;
-      const scrollThreshold = 0.15 * window.innerHeight;
+      const currentScrollPos = window.scrollY
+      const scrollThreshold = 0.15 * window.innerHeight
 
-      this.isHidden = currentScrollPos > scrollThreshold;
-    },
-  },
-  mounted() {
-    window.addEventListener("scroll", this.handleScroll);
-  },
-  beforeDestroy() {
-    window.removeEventListener("scroll", this.handleScroll);
-  },
-};
+      this.isHidden = currentScrollPos > scrollThreshold
+    }
+  }
+}
 </script>
 
 <style scoped></style>

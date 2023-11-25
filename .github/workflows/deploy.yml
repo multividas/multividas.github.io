@@ -2,7 +2,7 @@ name: Deploy portal web page
 
 on:
   push:
-    branches: ["main"]
+    branches: ['main']
 
   workflow_dispatch:
 
@@ -12,7 +12,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: 'pages'
   cancel-in-progress: false
 
 jobs:
@@ -25,7 +25,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '18'
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Install dependencies
@@ -33,7 +33,12 @@ jobs:
       - name: Install gridsome globally
         run: npm install --global @gridsome/cli
       - name: Build portal web page
-        run : gridsome build && touch dist/.nojekyll && touch dist/favicon.ico
+        run: |
+          npm run format
+          npm run lint
+          gridsome build
+          touch dist/.nojekyll
+          touch dist/favicon.ico
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:

@@ -1,144 +1,144 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .app-header {
-    top: 0;
-    position: fixed;
-    width: 100%;
-    z-index: 1020;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1020;
 }
 
 .bg-light-darken {
-    background-color: #021b3153 !important;
+  background-color: #021b3153 !important;
 }
 
 /* header */
 .header {
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 400px;
-    max-height: 400px;
-    text-align: center;
-    background: linear-gradient(135deg, #021b31, #105c9f);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    z-index: 1;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 400px;
+  max-height: 400px;
+  text-align: center;
+  background: linear-gradient(135deg, #021b31, #105c9f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1;
 }
 
-.header>h1 {
-    font-size: 50px !important;
+.header > h1 {
+  font-size: 50px !important;
 }
 
 /* stars */
 .stars {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-    max-height: 100%;
-    overflow: hidden;
-    z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  z-index: 2;
 }
 
 .stars .animation.stars-small {
-    animation: animStar 30s linear infinite;
-    z-index: 0;
-    opacity: .05;
-    background: url(~@/assets/images/stars/stars_small.webp);
+  animation: animStar 30s linear infinite;
+  z-index: 0;
+  opacity: 0.05;
+  background: url(~@/assets/images/stars/stars_small.webp);
 }
 
 .stars .animation.stars-large {
-    animation: animStar 15s linear infinite;
-    z-index: 1;
-    opacity: .2;
-    background: url(~@/assets/images/stars/stars_large.webp);
+  animation: animStar 15s linear infinite;
+  z-index: 1;
+  opacity: 0.2;
+  background: url(~@/assets/images/stars/stars_large.webp);
 }
 
 .stars .animation {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: calc(100vh + 400px);
-    background-size: cover;
-    color: transparent;
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: calc(100vh + 400px);
+  background-size: cover;
+  color: transparent;
+  z-index: 1;
 }
 
 @keyframes animStar {
-    0% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
+  }
 
-    100% {
-        transform: translateY(-50%);
-    }
+  100% {
+    transform: translateY(-50%);
+  }
 }
 
 /* stars */
 
 /* announcement */
 .announcement {
-    text-align: start;
+  text-align: start;
 }
 
 .announcement .announcement-date {
-    color: #626d78;
-    font-size: 1rem;
+  color: #626d78;
+  font-size: 1rem;
 }
 
 .announcement h3 {
-    font-size: 26px;
-    line-height: 1.5rem;
-    color: #212529;
+  font-size: 26px;
+  line-height: 1.5rem;
+  color: #212529;
 }
 
 .announcement p {
-    font-size: 22px;
-    line-height: 1.5rem;
-    color: #333;
+  font-size: 22px;
+  line-height: 1.5rem;
+  color: #333;
 }
 
 .announcement ul.announcement-content li {
-    font-size: 18px;
-    line-height: 2.5rem;
-    list-style-type: disc;
-    padding-left: 5px;
-    margin-left: 25px;
+  font-size: 18px;
+  line-height: 2.5rem;
+  list-style-type: disc;
+  padding-left: 5px;
+  margin-left: 25px;
 }
 
 .announcement .appreciation-text {
-    color: #626d78;
-    font-size: 1rem;
-    font-style: italic;
+  color: #626d78;
+  font-size: 1rem;
+  font-style: italic;
 }
 
 /* end announcement */
 
 @media only screen and (max-width: 576px) {
-    .header>h1 {
-        font-size: 40px !important;
-    }
+  .header > h1 {
+    font-size: 40px !important;
+  }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 767px) {
-    .header>h1 {
-        font-size: 45px !important;
-    }
+  .header > h1 {
+    font-size: 45px !important;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-    .header>h1 {
-        font-size: 50px !important;
-    }
+  .header > h1 {
+    font-size: 50px !important;
+  }
 }
