@@ -8,13 +8,29 @@ import NavbarLayout from '~/layouts/Navbar.vue'
 import '~/assets/js/script.js'
 import '~/assets/css/styles.css'
 
-export default function (Vue, { head }) {
+let googleAnalyticsId = process.env.GOOGLE_ANALYTICS_ID
+
+export default function (Vue, { head, isClient }) {
   // Set Navbar Navbar as a global component
   Vue.component('NavbarLayout', NavbarLayout)
   // Set Footer Footer as a global component
   Vue.component('FooterLayout', FooterLayout)
   // Set Main Main as a global component
   Vue.component('MainLayout', MainLayout)
+
+  if (isClient) {
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`;
+    document.head.appendChild(script);
+
+    script.onload = () => {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', googleAnalyticsId);
+    };
+  }
 
   // head links
   head.link.push(
