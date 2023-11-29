@@ -43,8 +43,6 @@ jobs:
 
       - name: Build portal web page
         run: |
-          npm run format
-          npm run lint
           gridsome build
           touch dist/.nojekyll
           touch dist/favicon.ico
