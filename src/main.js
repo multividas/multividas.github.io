@@ -8,8 +8,6 @@ import NavbarLayout from '~/layouts/Navbar.vue'
 import '~/assets/js/script.js'
 import '~/assets/css/styles.css'
 
-let googleAnalyticsId = process.env.GOOGLE_ANALYTICS_ID
-
 export default function (Vue, { head, isClient }) {
   // Set Navbar Navbar as a global component
   Vue.component('NavbarLayout', NavbarLayout)
@@ -21,14 +19,14 @@ export default function (Vue, { head, isClient }) {
   if (isClient) {
     const script = document.createElement('script');
     script.async = true;
-    script.src = `https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=G-RQWETTJBTY`;
     document.head.appendChild(script);
 
     script.onload = () => {
       window.dataLayer = window.dataLayer || [];
       function gtag(){ dataLayer.push(arguments); }
       gtag('js', new Date());
-      gtag('config', googleAnalyticsId);
+      gtag('config', 'G-RQWETTJBTY');
     };
   }
 
