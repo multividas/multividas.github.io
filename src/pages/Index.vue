@@ -5,7 +5,11 @@
         <div class="animation stars-small" />
         <div class="animation stars-large" />
       </div>
-      <h1 class="fw-bold text-white">Multividas.com</h1>
+      <g-image
+        class="multividas-logo"
+        src="~/assets/images/png/nav-multividas-blogging-platform-multividas-social-media-blog-multividas-posts-threads-multividas-comments-discussions-multividas-short-texts-multividas-social-blogging.svg"
+        alt="multividas, multividas api documentation, multividas threads, multividas status, multividas help center, multividas developer, multividas about us, multividas ads, multividas engineering blog, multividas developers documentation, multividas embed threadsmultividas, multividas api documentation, multividas threads, multividas status, multividas help center, multividas developer, multividas about us, multividas ads, multividas engineering blog, multividas developers documentation, multividas embed threadsmultividas, multividas api documentation, multividas threads, multividas status, multividas help center, multividas developer, multividas about us, multividas ads, multividas engineering blog, multividas developers documentation, multividas embed threadsmultividas, multividas api documentation, multividas threads, multividas status, multividas help center, multividas developer, multividas about us, multividas ads, multividas engineering blog, multividas developers documentation, multividas"
+      />
     </header>
     <main class="container px-4 py-2 my-4 py-md-5 my-md-2">
       <div class="card">
@@ -25,18 +29,23 @@
                 >
                   @soulaimaneyahya
                 </span>
-                <span>living room and neighborhood library in 2023 and will officially released on July,2024.</span>
+                <span
+                  >living room and neighborhood library in 2023 and will
+                  officially released on July,2024.</span
+                >
               </li>
               <li>
-                Our mission is to build the app of everything, creating a diverse and inclusive
-                world for everyone to share threads posts.
+                Our mission is to build the app of everything, creating a
+                diverse and inclusive world for everyone to share threads posts.
               </li>
               <li>
-                Multividas.com is a social media and blogging platform where people can share their
-                short texts and posts, leaving comments and have discussions on threads.
+                Multividas.com is a social media and blogging platform where
+                people can share their short texts and posts, leaving comments
+                and have discussions on threads.
               </li>
               <li>
-                We'll provide more informations and details over the upcoming weeks and months.
+                We'll provide more informations and details over the upcoming
+                weeks and months.
               </li>
             </ul>
             <div class="announcement-footer">
@@ -55,14 +64,14 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Home Page'
+    title: "Home Page",
   },
   methods: {
     handleRedirect() {
-      return window.open('https://soulaimaneyahya.com/', '_blank')
-    }
-  }
-}
+      return window.open("https://soulaimaneyahya.com/", "_blank");
+    },
+  },
+};
 </script>
 
 <style></style>
