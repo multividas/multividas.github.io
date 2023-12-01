@@ -40,6 +40,9 @@
               <a href="https://ads.multividas.com" target="_blank">Advertising</a>
             </li>
             <li>
+              <a href="https://blog.multividas.com" target="_blank">Multividas blog</a>
+            </li>
+            <li>
               <a href="https://engineering.multividas.com" target="_blank">Engineering blog</a>
             </li>
             <li>
