@@ -21,7 +21,6 @@
             </div>
             <ul class="announcement-content-list mb-3">
               <li class="announcement-content-item">
-                <span>Multividas.com began in ceo-founder</span>
                 <span
                   role="button"
                   class="fw-bold text-primary text-decoration-underline"
@@ -29,7 +28,7 @@
                 >
                   @soulaimaneyahya
                 </span>
-                <span>living room and neighborhood library in 2023 and willofficially released on July,2024.</span>
+                <span>CEO-Founder | Software Engineer at Multividas.com</span>
               </li>
               <li class="announcement-content-item">
                 With Multividas, you can share threads, publish articles and news.
