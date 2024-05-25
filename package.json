@@ -1,26 +1,35 @@
 {
-  "name": "multividas.github.io",
-  "private": true,
+  "name": "multividas",
   "version": "1.0.0",
-  "description": "Multividas.com is a social media and blogging platform where people can share their short texts and posts, leaving comments and have discussions on threads.",
-  "keywords": [
-    "multividas",
-    "multividas blogs",
-    "multividas threads",
-    "multividas api documentation"
-  ],
-  "author": "soulaimane yahya <contact@soulaimaneyahya.com> (https://soulaimaneyahya.com/)",
   "license": "MIT",
+  "description": "With Multividas, you can share threads, publish articles and news.",
+  "keywords": [
+    "multividas"
+  ],
+  "authors": [
+    {
+      "name": "soulaimaneyahya",
+      "email": "contact@soulaimaneyahya.com"
+    }
+  ],
   "scripts": {
-    "develop": "gridsome develop",
+    "dev": "gridsome develop",
     "build": "gridsome build",
     "explore": "gridsome explore"
   },
   "dependencies": {
     "gridsome": "^0.7.0"
   },
+  "bugs": {
+    "url": "https://github.com/multividas/multividas.github.io/issues"
+  },
+  "homepage": "https://github.com/multividas/multividas.github.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/multividas/multividas.github.io.git"
+  },
   "engines": {
     "nvm": "16",
-    "node": "^16"
+    "node": "^16.0.0"
   }
 }

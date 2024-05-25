@@ -66,7 +66,7 @@ export default function (Vue, { head, isClient }) {
     },
     {
       name: 'type',
-      content: 'social media and blogging platform'
+      content: 'Multividas is a social media blogging platform'
     },
     {
       name: 'title',
@@ -74,13 +74,11 @@ export default function (Vue, { head, isClient }) {
     },
     {
       name: 'description',
-      content:
-        'Multividas.com is a social media and blogging platform where people can share their short texts and posts, leaving comments and have discussions on threads.'
+      content: 'With Multividas, you can share threads, publish articles and news.'
     },
     {
       name: 'keywords',
-      content:
-        'multividas, multividas api documentation, multividas threads, multividas status, multividas help center, multividas developer, multividas about us, multividas ads, multividas engineering blog, multividas developers documentation, multividas embed threads'
+      content: 'multividas, multividas api documentation, multividas threads, multividas status, multividas help center, multividas developer, multividas about us, multividas ads, multividas engineering blog, multividas developers documentation, multividas embed threads'
     },
     {
       name: 'author',
@@ -96,8 +94,7 @@ export default function (Vue, { head, isClient }) {
   head.meta.push(
     {
       property: 'og:description',
-      content:
-        'Multividas.com is a social media and blogging platform where people can share their short texts and posts, leaving comments and have discussions on threads.'
+      content: 'With Multividas, you can share threads, publish articles and news.'
     },
     {
       property: 'og:image',
@@ -125,12 +122,11 @@ export default function (Vue, { head, isClient }) {
     },
     {
       name: 'twitter:title',
-      content: 'Multividas - Social Media and Blogging Platform'
+      content: 'Multividas is a social media blogging platform'
     },
     {
       name: 'twitter:description',
-      content:
-        'Multividas.com is a social media and blogging platform where people can share their short texts and posts, leaving comments and have discussions on threads.'
+      content: 'With Multividas, you can share threads, publish articles and news.'
     },
     {
       name: 'twitter:image',

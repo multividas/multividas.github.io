@@ -19,8 +19,8 @@
               <p class="announcement-date mb-2">Announced on July 7th, 2024.</p>
               <h3>Explore the diverse world of Multividas</h3>
             </div>
-            <ul class="announcement-content mb-3">
-              <li>
+            <ul class="announcement-content-list mb-3">
+              <li class="announcement-content-item">
                 <span>Multividas.com began in ceo-founder</span>
                 <span
                   role="button"
@@ -29,21 +29,15 @@
                 >
                   @soulaimaneyahya
                 </span>
-                <span
-                  >living room and neighborhood library in 2023 and will
-                  officially released on July,2024.</span
-                >
+                <span>living room and neighborhood library in 2023 and willofficially released on July,2024.</span>
               </li>
-              <li>
-                Our mission is to build the app of everything, creating a
-                diverse and inclusive world for everyone to share threads posts.
+              <li class="announcement-content-item">
+                With Multividas, you can share threads, publish articles and news.
               </li>
-              <li>
-                Multividas.com is a social media and blogging platform where
-                people can share their short texts and posts, leaving comments
-                and have discussions on threads.
+              <li class="announcement-content-item">
+                We started as a community for software engineers to share texts and short posts. Our goal is to buildthe EVERYTHING APP. Multividas.com will serve diverse services.
               </li>
-              <li>
+              <li class="announcement-content-item">
                 We'll provide more informations and details over the upcoming
                 weeks and months.
               </li>
@@ -74,6 +68,5 @@ export default {
 };
 </script>
 
-<style></style>
-
-<style scoped></style>
+<style scoped>
+</style>
