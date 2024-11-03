@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multividas.com</title>
+  <link rel="shortcut icon"
+    href="https://raw.githubusercontent.com/multividas/developers-multividas/refs/heads/main/docs/public/images/logo.svg"
+    type="image/x-icon" />
+  <!-- meta desc -->
+  <meta name="description"
+    content="Multividas.com is social media platform, where you can share posts, publish articles and news .." />
+  <meta name="keywords" content="multividas.com" />
+  <meta name="author" content="multividas.com" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- open graph -->
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="multividas.com" />
+  <meta property="og:description"
+    content="Multividas.com is social media platform, where you can share posts, publish articles and news .." />
+  <meta property="og:url" content="https://multividas.com" />
+  <meta property="og:site_name" content="multividas.com" />
+  <meta name="theme-color" content="#0f4c81" />
+
+  <!-- styles css -->
+  <link rel="stylesheet" href="./mv-main@2.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <nav class="header-nav__brand">
+        <ul class="header-nav__brand_list">
+          <li class="header-nav__item">
+            <a href="#">Multividas.com</a>
+          </li>
+        </ul>
+        <div class="burger-menu" onclick="toggleMenu()">&#9776;</div>
+      </nav>
+      <nav class="header-nav">
+        <ul class="header-nav__list">
+          <li class="header-nav__item">
+            <a href="https://about.multividas.com" target="_blank">Who we are</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="https://about.multividas.com/products" target="_blank">Our products</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="https://github.com/multividas" target="_blank">Open source</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="https://news.multividas.com" target="_blank">News</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="https://support.multividas.com" target="_blank">Support</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main__container">
+    <section class="multividas__section">
+      <h1>Multividas.com</h1>
+      <p>Multividas.com is a social media platform for sharing posts, publishing articles, and news...</p>
+    </section>
+
+    <section class="multividas__section">
+      <h2>Security Issues</h2>
+      <p>If you discover a security vulnerability, please review our
+        <a href="https://github.com/multividas/.github/blob/main/SECURITY.md" target="_blank">[security issue guidelines]</a>
+      </p>
+    </section>
+
+    <section class="multividas__section">
+      <h2>Contact us</h2>
+      <p>Send an email to our dev team at:
+        <a href="mailto:multividasdotcom@gmail.com">[multividasdotcom@gmail.com]</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer__container">
+      <div class="footer__section">
+        <h3 class="footer__section-title">Multividas</h3>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="https://multividas.com" target="_blank">Multividas.com</a>
+          </li>
+          <li class="footer__item">
+            <a href="https://multichat.network" target="_blank">MultiChat.network</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__section">
+        <h3 class="footer__section-title">Resources</h3>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="https://blog.multividas.com" target="_blank">Blog</a>
+          </li>
+          <li class="footer__item">
+            <a href="https://developers.multividas.com" target="_blank">Developers</a>
+          </li>
+          <li class="footer__item">
+            <a href="https://status.multividas.com" target="_blank">Status</a>
+          </li>
+          <li class="footer__item">
+            <a href="https://github.com/multividas/multividas-php-business-sdk" target="_blank">SDKs</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__section">
+        <h3 class="footer__section-title">Company</h3>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="https://about.multividas.com" target="_blank">About us</a>
+          </li>
+          <li class="footer__item">
+            <a href="https://about.multividas.com/brand-resources" target="_blank">Brand Resources</a>
+          </li>
+          <li class="footer__item">
+            <a href="https://multividas.com/investor-relations" target="_blank">Investor Relations</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__section">
+        <h3 class="footer__section-title">Support</h3>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="https://help.multividas.com" target="_blank">Help Center</a>
+          </li>
+          <li class="footer__item">
+            <a href="https://multividas.com/contact-us" target="_blank">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" defer>
+    const toggleMenu = () => {
+      document.querySelectorAll('.header-nav').forEach(list => {
+        list.classList.toggle('show');
+      });
+    }
+  </script>
+</body>
+
+</html>

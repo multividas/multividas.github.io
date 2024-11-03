@@ -1,0 +1,97 @@
+@use "../abstracts/variables";
+
+// Header Styles
+.header {
+  background-color: variables.$background-color;
+
+  &__container {
+    padding: 0 !important;
+  }
+
+  &-nav__brand {
+    padding: variables.$base-padding * 0.5 variables.$base-padding; // 10px
+  }
+
+  &-nav__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: variables.$base-padding; // 20px
+  }
+
+  // Burger Menu for Mobile
+  .burger-menu {
+    display: none;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  &-nav__item,
+  &-nav__brand_list &-nav__item {
+    cursor: pointer;
+    padding: 8px 0;
+    transition: background-color 0.2s ease;
+
+    a {
+      color: variables.$primary-text-color;
+      font-weight: 600;
+      font-size: 15px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &-nav__brand_list &-nav__item a {
+    font-size: 18px;
+  }
+
+  @media (max-width: variables.$breakpoint-mobile) {
+    &-nav__brand {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-nav {
+      display: none;
+    }
+
+    &-nav__list {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      gap: 10px;
+
+      li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #cacaca;
+
+        &:first-child {
+          border-top: 1px solid #cacaca;
+        }
+      }
+    }
+
+    &-nav.show {
+      display: flex;
+    }
+
+    .burger-menu {
+      display: block;
+    }
+  }
+
+  @media (min-width: variables.$breakpoint-tablet) {
+    &__container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
