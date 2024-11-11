@@ -3,12 +3,14 @@
 
 // Footer Styles
 footer {
+  margin: 0;
+  padding: 0;
   color: variables.$text-color-5;
   background-color: variables.$footer-background-color;
 
   .footer__container {
     @extend .container !optional;
-    padding: 40px 20px;
+    padding: variables.$base-padding variables.$base-padding;
   }
 
   .footer__section {
@@ -18,7 +20,7 @@ footer {
   .footer__section-title {
     font-weight: bold;
     font-size: 1.2em;
-    margin-bottom: 20px;
+    margin: 20px auto;
     color: #344854;
   }
 
@@ -72,8 +74,6 @@ footer {
   }
 
   @media (max-width: variables.$breakpoint-mobile) {
-    padding: 30px 0;
-
     .footer__container {
       margin: 0;
       padding: 0;
@@ -94,11 +94,25 @@ footer {
         }
       }
     }
+
+    .footer__conditions_container {
+      text-align: center;
+      ul.footer__conditions_list {
+        display: block;
+      }
+    }
   }
 
   @media (max-width: variables.$breakpoint-tablet) {
     .footer__section {
       text-align: center;
+    }
+
+    .footer__conditions_container {
+      text-align: center;
+      ul.footer__conditions_list {
+        display: block;
+      }
     }
   }
 
