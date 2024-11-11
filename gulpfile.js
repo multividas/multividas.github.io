@@ -35,20 +35,22 @@ const compileSass = async () => {
   }
 }
 
-const buildComponentStyles = () => {
-  const cssFiles = [
-      { src: './docs/header.css', rename: 'mv-header@2.css' },
-      { src: './docs/footer.css', rename: 'mv-footer@2.css' },
-      { src: './docs/main.css', rename: 'mv-main@2.css' }
-  ]
-
-  return cssFiles.map(file =>
-    gulp.src(file.src)
-      .pipe(cleanCSS({ compatibility: 'ie8' }))
-      .pipe(rename(file.rename))
-      .pipe(header(headerComment))
-      .pipe(gulp.dest('./docs/'))
-  )
-}
+const buildComponentStyles = gulp.parallel(
+  () => gulp.src('./docs/header.css')
+            .pipe(cleanCSS({ compatibility: 'ie8' }))
+            .pipe(rename('mv-header@2.css'))
+            .pipe(header(headerComment))
+            .pipe(gulp.dest('./docs/')),
+  () => gulp.src('./docs/footer.css')
+            .pipe(cleanCSS({ compatibility: 'ie8' }))
+            .pipe(rename('mv-footer@2.css'))
+            .pipe(header(headerComment))
+            .pipe(gulp.dest('./docs/')),
+  () => gulp.src('./docs/main.css')
+            .pipe(cleanCSS({ compatibility: 'ie8' }))
+            .pipe(rename('mv-main@2.css'))
+            .pipe(header(headerComment))
+            .pipe(gulp.dest('./docs/'))
+)
 
 exports.build = gulp.series(compileSass, buildComponentStyles)
