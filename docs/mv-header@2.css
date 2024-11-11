@@ -1,0 +1,10 @@
+/**
+* Copyright (c) 2023 by Soulaimane Yahya.
+* All rights reserved.
+*
+* This code is developed by Soulaimane Yahya and is protected under international copyright laws.
+* Unauthorized reproduction, distribution, or modification of this code is strictly prohibited.
+*
+* Website: https://www.multividas.com
+*/
+.header{background-color:#f6f8fb}.header__container{padding:0!important}.header-nav__brand{padding:10px 20px}.header-nav__list{display:flex;list-style:none;margin:0;padding:0;gap:20px}.header .burger-menu{display:none;font-size:22px;cursor:pointer}.header-nav__brand_list .header-nav__item,.header-nav__item{cursor:pointer;padding:8px 0;transition:background-color .2s ease}.header-nav__brand_list .header-nav__item a,.header-nav__item a{color:#222;font-weight:600;font-size:15px}.header-nav__brand_list .header-nav__item a:hover,.header-nav__item a:hover{text-decoration:underline}.header-nav__brand_list .header-nav__item a{font-size:18px}@media (max-width:480px){.header-nav__brand{width:100%;display:flex;justify-content:space-between;align-items:center}.header-nav{display:none}.header-nav__list{flex-direction:column;align-items:center;width:100%;gap:0}.header-nav__list li{width:100%;text-align:center;border-bottom:1px solid #cacaca}.header-nav__list li:first-child{border-top:1px solid #cacaca}.header-nav.show{display:flex}.header .burger-menu{display:block}}@media (min-width:768px){.header__container{width:100%;display:flex;justify-content:space-between;align-items:center}}

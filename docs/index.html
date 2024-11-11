@@ -27,6 +27,8 @@
   <meta name="theme-color" content="#0f4c81" />
 
   <!-- styles css -->
+  <link rel="stylesheet" href="./mv-header@2.css" />
+  <link rel="stylesheet" href="./mv-footer@2.css" />
   <link rel="stylesheet" href="./mv-main@2.css" />
 </head>
 
@@ -143,9 +145,34 @@
         </ul>
       </div>
     </div>
+
+    <div class="footer__conditions_container">
+      <ul class="footer__conditions_list">
+        <li class="footer__copy_item">
+          <a href="#">&copy; <span id="currentYear"></span> Multividas</a>
+        </li>
+      </ul>
+
+      <ul class="footer__conditions_list">
+        <li class="footer__conditions_item">
+          <a href="https://multividas.com/terms-of-use" target="_blank">Terms of use</a>
+        </li>
+        <li class="footer__conditions_item">
+          <a href="https://multividas.com/privacy-policy" target="_blank">Privacy Policy</a>
+        </li>
+        <li class="footer__conditions_item">
+          <a href="https://multividas.com/data-privacy-compliance" target="_blank">Data Privacy and Compliance</a>
+        </li>
+        <li class="footer__conditions_item">
+          <a href="https://multividas.com/cookies" target="_blank">Cookies</a>
+        </li>
+      </ul>
+    </div>
   </footer>
 
   <script type="text/javascript" defer>
+    document.getElementById("currentYear").textContent = new Date().getFullYear()
+
     const toggleMenu = () => {
       document.querySelectorAll('.header-nav').forEach(list => {
         list.classList.toggle('show');
