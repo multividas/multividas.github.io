@@ -2,14 +2,11 @@
 @use "./base/reset";
 @use "./abstracts/variables";
 @use "./abstracts/mixins";
-
-@use "./layout/header";
 @use "./layout/grid";
-@use "./layout/footer";
 
 // Main CSS
 body {
-  color: variables.$primary-text-color;
+  color: variables.$text-color-2;
   background-color: variables.$background-color;
   padding: 0;
   margin: 0;
@@ -35,17 +32,17 @@ main {
   }
 
   h1 {
-    color: variables.$primary-text-color;
+    color: variables.$text-color-2;
     font-size: 2em;
   }
 
   h2 {
-    color: variables.$primary-text-color;
+    color: variables.$text-color-2;
     font-size: 1.5em;
   }
 
   p {
-    color: variables.$secondary-text-color;
+    color: variables.$text-color-5;
     font-size: 1em;
   }
 

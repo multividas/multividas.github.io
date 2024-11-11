@@ -1,8 +1,8 @@
-@use "../abstracts/variables";
+@use "./abstracts/variables";
 
 // Header Styles
 .header {
-  background-color: variables.$background-color;
+  background-color: variables.$header-background-color;
 
   &__container {
     padding: 0 !important;
@@ -34,7 +34,7 @@
     transition: background-color 0.2s ease;
 
     a {
-      color: variables.$primary-text-color;
+      color: variables.$text-color-2;
       font-weight: 600;
       font-size: 15px;
 

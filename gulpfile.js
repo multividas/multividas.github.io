@@ -17,29 +17,38 @@ const headerComment = `/**
 */\n`
 
 const compileSass = async () => {
-    try {
-        const result = await sass.compileAsync(
-          path.join(__dirname, 'src/scss/main.scss')
-        )
+  try {
+      const sassFiles = [
+          { src: 'src/scss/_header.scss', dest: 'docs/header.css' },
+          { src: 'src/scss/_footer.scss', dest: 'docs/footer.css' },
+          { src: 'src/scss/main.scss', dest: 'docs/main.css' }
+      ]
 
-        fs.writeFileSync(path.join(__dirname, 'docs/main.css'), result.css)
-        console.log('Sass compiled successfully.')
-    } catch (error) {
-        console.error('Sass compilation error:', error)
-    }
+      for (const file of sassFiles) {
+          const result = await sass.compileAsync(path.join(__dirname, file.src))
+          fs.writeFileSync(path.join(__dirname, file.dest), result.css)
+      }
+
+      console.log('Sass compiled successfully.')
+  } catch (error) {
+      console.error('Sass compilation error:', error)
+  }
 }
 
 const buildComponentStyles = () => {
-  return gulp.src('./docs/main.css')
-    .pipe(cleanCSS({ compatibility: 'ie8' }))
-    .pipe(rename('mv-main@2.css'))
-    .pipe(header(headerComment))
-    .pipe(gulp.dest('./docs/'))
-}
+  const cssFiles = [
+      { src: './docs/header.css', rename: 'mv-header@2.css' },
+      { src: './docs/footer.css', rename: 'mv-footer@2.css' },
+      { src: './docs/main.css', rename: 'mv-main@2.css' }
+  ]
 
-const watchSass = () => {
-    gulp.watch('./src/scss/**/*.scss', compileSass)
+  return cssFiles.map(file =>
+    gulp.src(file.src)
+      .pipe(cleanCSS({ compatibility: 'ie8' }))
+      .pipe(rename(file.rename))
+      .pipe(header(headerComment))
+      .pipe(gulp.dest('./docs/'))
+  )
 }
 
 exports.build = gulp.series(compileSass, buildComponentStyles)
-exports.watch = gulp.series(watchSass)
